@@ -3,6 +3,14 @@ command: "osascript 'Aoede.widget/music.scpt'"
 refreshFrequency: 1000
 
 style: """
+  @font-face
+    font-family: NexaBold
+    src: url(fonts/Nexa_Bold.ttf)
+
+  @font-face
+    font-family: NexaLight
+    src: url(fonts/Nexa_Light.ttf)
+
   position: absolute
   bottom: 40px
   left: 40px
@@ -23,7 +31,7 @@ style: """
     overflow: hidden
 
   #title
-    font-family: Nexa Bold, Gotham Bold, Hiragino Kaku Gothic StdN W8
+    font-family: NexaBold, Hiragino Kaku Gothic StdN W8
     font-weight: 700
     font-size: 2.7rem
     line-height: 80px
@@ -31,7 +39,7 @@ style: """
     text-transform: uppercase
 
   #subtitle
-    font-family: Nexa Light, Proxima Nova
+    font-family: NexaLight
     font-weight: 100
     font-size: 1.8rem
     line-height: 5px
